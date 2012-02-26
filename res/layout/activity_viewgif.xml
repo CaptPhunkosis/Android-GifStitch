@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@color/dark_background"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<FrameLayout
+	  android:layout_width="match_parent"
+	  android:layout_height="match_parent">	
+	    <com.phunkosis.gifstitch.views.GifView
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_gravity="center" android:gravity="center"
+	    	android:id="@+id/viewedGif" />    
+	</FrameLayout>
+	
+	<Button
+		android:id="@+id/button_nav_back"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentLeft="true"
+		android:layout_width="@dimen/tab_button_size_v"
+		android:layout_height="@dimen/tab_button_size_v"
+		android:padding="0dp"
+    	android:background="@drawable/tab_back_g"
+    	android:layout_marginBottom="5dip"/>
+	<Button
+		android:id="@+id/button_nav_home"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"
+		android:layout_width="@dimen/tab_button_size_v"
+		android:layout_height="@dimen/tab_button_size_v"
+		android:padding="0dp"
+    	android:background="@drawable/tab_home_g"
+    	android:layout_marginBottom="5dip"/>
+    	
+    <!-- <Button
+		android:id="@+id/button_delete"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"
+		android:layout_width="@dimen/tab_button_size_v"
+		android:layout_height="@dimen/tab_button_size_v"
+		android:padding="0dp"
+    	android:background="@drawable/tab_delete_r"
+    	android:layout_marginBottom="5dip"/> -->
+	<Button
+		android:id="@+id/button_share"
+		android:layout_above="@id/button_nav_home"
+		android:layout_alignParentRight="true"
+		android:layout_width="@dimen/tab_button_size_v"
+		android:layout_height="@dimen/tab_button_size_v"
+		android:padding="0dp"
+    	android:background="@drawable/tab_share_g"
+    	android:layout_marginBottom="5dip"/>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item 
+    	android:id="@+id/creategif_mi_add_image"
+    	android:title="@string/creategif_menuitem_add_image"
+    	 />
+    <item
+    	android:id="@+id/creategif_mi_build_gif"
+    	android:title="@string/creategif_menuitem_build_gif"
+    	/>
+</menu>

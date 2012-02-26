@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:camera="http://schemas.android.com/apk/res/com.android.camera"
+        android:background="@color/dark_background"
+        android:id="@+id/camera"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.phunkosis.gifstitch.views.PreviewFrameLayout android:id="@+id/frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+        <FrameLayout android:id="@+id/frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <SurfaceView android:id="@+id/camera_preview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+        </FrameLayout>
+    </com.phunkosis.gifstitch.views.PreviewFrameLayout>
+</LinearLayout>
+
+<!-- 
+
+android:layout_marginLeft="2dp"
+
+ -->

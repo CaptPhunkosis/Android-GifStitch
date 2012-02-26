@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- DIMENSIONS -->
+    <dimen name="home_item_size">96dp</dimen>
+    <dimen name="browser_thumb_size">48dp</dimen>
+    <dimen name="create_list_thumb_size">64dp</dimen>
+    <dimen name="camera_pic_size">1280px</dimen>
+    <dimen name="scroll_effect_holder_h">55dip</dimen>
+    <dimen name="tab_button_size_v">51dip</dimen>
+    <integer name="tab_animation_duration">500</integer>
+    <integer name="gif_quality">5</integer>
+    <dimen name="gif_view_scale">1.0px</dimen>
+    <integer name="browse_slide_duration">300</integer>
+    <integer name="max_frames">40</integer>
+    <integer name="days_til_rate_prompt">5</integer>
+    <integer name="gifs_made_before_rate_prompt">10</integer>
+</resources>

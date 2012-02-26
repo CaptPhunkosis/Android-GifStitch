@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.phunkosis.gifstitch"
+      android:versionName="1.0.8" android:versionCode="5">
+    <uses-sdk android:targetSdkVersion="8" android:minSdkVersion="8"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+    <uses-feature android:name="android.hardware.camera" />
+ 	<uses-feature android:name="android.hardware.camera.autofocus" />
+ 	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <application android:label="@string/app_name" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" android:icon="@drawable/ic_launcher" android:name="MyApplication" android:debuggable="false">
+        <activity android:label="@string/app_name" android:name="HomeGalleryActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="BrowseGifsActivity"></activity>
+        <activity android:name=".ViewGifActivity"></activity>
+        <activity android:name=".GatherFramesActivity"></activity>
+        <activity android:name=".GatherFramesActivity"></activity>
+        <activity android:name="PreviewActivity"></activity>
+    </application>
+</manifest>

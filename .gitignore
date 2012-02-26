@@ -1,0 +1,58 @@
+IGNORE
+
+#built application files
+*.apk
+*.ap_
+bin
+gen
+
+# files for the dex VM
+*.dex
+
+# generated GUI files
+#*R.java
+
+#ignore nohup files
+nohup.out
+
+#Ignore patches and any original files created by patch command
+*.diff
+*.patch
+*.orig
+
+#Ignore hidden files from Dolphin window manager
+.directory
+
+#Ignore all compiled python files
+*.pyc
+*.pyo
+
+#Ignore all emacs crap
+*#
+.#*
+
+#Ignore all Java/Python class files
+*.class
+
+#Ignore ide project files
+*.pydevproject
+*.project
+*.classpath
+*.kpf
+*.komodoproject
+
+# ignore editor backup files
+*~
+*.swp
+*.swo
+*.swn
+*.swm
+
+# mac os x finder crap
+**/.DS_STORE
+.DS_STORE
+
+# exuberant (!) ctags
+tags
+
+local_settings.py

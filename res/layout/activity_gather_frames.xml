@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/dark_background"
+  android:padding="0dp"
+  android:layout_margin="0dp"
+  >
+  
+	<com.phunkosis.gifstitch.views.CameraSurface
+    	android:id="@+id/camera_surface"
+    	android:layout_width="match_parent"
+  		android:layout_height="match_parent" />
+	<ImageView
+	  	android:id="@+id/worker_image"
+	  	android:layout_width="match_parent"
+	  	android:layout_height="match_parent"
+	  	android:visibility="gone"
+	  	android:scaleType="fitXY"
+	  	android:adjustViewBounds="false" />
+  	<Button
+  		android:id="@+id/button_preview"
+  		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"
+		android:layout_width="@dimen/tab_button_size_v"
+		android:layout_height="@dimen/tab_button_size_v"
+		android:padding="0dp"
+    	android:background="@drawable/tab_next_g"
+    	android:layout_marginBottom="@dimen/create_list_thumb_size" />
+  	<ToggleButton
+		android:id="@+id/button_options"
+		android:textOn="" android:textOff=""
+		android:layout_above="@id/button_preview"
+		android:layout_alignParentRight="true"
+		android:layout_width="@dimen/tab_button_size_v"
+		android:layout_height="@dimen/tab_button_size_v"
+		android:padding="0dp"
+    	android:background="@drawable/tab_options_toggle"
+    	android:layout_marginBottom="5dip" />
+    <Button
+  		android:id="@+id/button_clear"
+  		android:layout_above="@id/button_options"
+		android:layout_alignParentRight="true"
+		android:layout_width="@dimen/tab_button_size_v"
+		android:layout_height="@dimen/tab_button_size_v"
+		android:padding="0dp"
+    	android:background="@drawable/tab_clear_g"
+    	android:layout_marginBottom="5dip" />
+  	<Button
+  		android:id="@+id/button_delete_frame"
+  		android:layout_above="@+id/button_clear"
+		android:layout_alignParentRight="true"
+		android:layout_width="@dimen/tab_button_size_v"
+		android:layout_height="@dimen/tab_button_size_v"
+		android:padding="0dp"
+    	android:background="@drawable/tab_delete_r"
+    	android:visibility="gone"
+    	android:layout_marginBottom="5dip" />
+  	<RelativeLayout
+  		android:id="@+id/layout_tools"
+  		android:layout_alignParentBottom="true"
+		android:layout_alignParentLeft="true"
+		android:layout_width="@dimen/tab_button_size_v"
+		android:layout_height="wrap_content"
+		android:padding="0dp"
+		android:layout_marginBottom="@dimen/create_list_thumb_size"
+		android:visibility="gone" >
+  		<Button
+	  		android:id="@+id/button_add"
+	  		android:layout_alignParentBottom="true"
+			android:layout_alignParentLeft="true"
+			android:layout_width="@dimen/tab_button_size_v"
+			android:layout_height="@dimen/tab_button_size_v"
+			android:padding="0dp"
+	    	android:background="@drawable/tab_addimage_g"
+	    	android:layout_marginBottom="5dip" />
+	  	<ToggleButton 
+	  		android:id="@+id/button_autofocus"
+	  		android:textOn="" android:textOff=""
+			android:layout_above="@id/button_add"
+			android:layout_alignParentLeft="true"
+			android:layout_width="@dimen/tab_button_size_v"
+			android:layout_height="@dimen/tab_button_size_v"
+			android:padding="0dp"
+	    	android:background="@drawable/tab_autofocus_toggle"
+	    	android:layout_marginBottom="5dip" />
+	 	<ToggleButton
+			android:id="@+id/button_onionskin"
+			android:textOn="" android:textOff=""
+			android:layout_above="@id/button_autofocus"
+			android:layout_alignParentLeft="true"
+			android:layout_width="@dimen/tab_button_size_v"
+			android:layout_height="@dimen/tab_button_size_v"
+			android:padding="0dp"
+	    	android:background="@drawable/tab_onionskin_toggle"
+	    	android:layout_marginBottom="5dip" />
+	    <ToggleButton
+	  		android:id="@+id/button_effects_toggle"
+	  		android:textOn="" android:textOff=""
+	  		android:layout_above="@id/button_onionskin"
+			android:layout_alignParentLeft="true"
+			android:layout_width="@dimen/tab_button_size_v"
+			android:layout_height="@dimen/tab_button_size_v"
+			android:padding="0dp"
+	    	android:background="@drawable/tab_effects_toggle"
+	    	android:layout_marginBottom="5dip" />
+  		</RelativeLayout>
+  		<HorizontalScrollView
+  			android:layout_alignParentTop="true"
+		  	android:layout_width="wrap_content"
+		  	android:layout_height="@dimen/scroll_effect_holder_h"
+		  	android:scrollbars="horizontal"
+		  	android:id="@+id/layout_effects"
+		  	android:visibility="gone" >
+		  	<LinearLayout
+		  		android:orientation="horizontal"
+			  	android:layout_width="wrap_content"
+			  	android:layout_height="match_parent">
+			  	<Button
+			  		android:id="@+id/button_effect_none"
+					android:layout_width="@dimen/tab_button_size_v"
+					android:layout_height="@dimen/tab_button_size_v"
+			    	android:background="@drawable/tab_ce_none"
+			    	android:layout_marginLeft="2dip"
+			    	android:layout_marginRight="2dip" />
+			    <Button
+			    	android:id="@+id/button_effect_mono"
+					android:layout_width="@dimen/tab_button_size_v"
+					android:layout_height="@dimen/tab_button_size_v"
+			    	android:background="@drawable/tab_ce_mono"
+			    	android:layout_marginLeft="2dip"
+			    	android:layout_marginRight="2dip" />
+			    <Button
+			    	android:id="@+id/button_effect_sepia"
+					android:layout_width="@dimen/tab_button_size_v"
+					android:layout_height="@dimen/tab_button_size_v"
+			    	android:background="@drawable/tab_ce_sepia"
+			    	android:layout_marginLeft="2dip"
+			    	android:layout_marginRight="2dip" />
+			    <Button
+			    	android:id="@+id/button_effect_aqua"
+					android:layout_width="@dimen/tab_button_size_v"
+					android:layout_height="@dimen/tab_button_size_v"
+			    	android:background="@drawable/tab_ce_aqua"
+			    	android:layout_marginLeft="2dip"
+			    	android:layout_marginRight="2dip" />
+			    <Button
+			    	android:id="@+id/button_effect_solarize"
+					android:layout_width="@dimen/tab_button_size_v"
+					android:layout_height="@dimen/tab_button_size_v"
+			    	android:background="@drawable/tab_ce_solarize"
+			    	android:layout_marginLeft="2dip"
+			    	android:layout_marginRight="2dip" />
+			    <Button
+			    	android:id="@+id/button_effect_posterize"
+					android:layout_width="@dimen/tab_button_size_v"
+					android:layout_height="@dimen/tab_button_size_v"
+			    	android:background="@drawable/tab_ce_posterize"
+			    	android:layout_marginLeft="2dip"
+			    	android:layout_marginRight="2dip" />
+			    <Button
+			    	android:id="@+id/button_effect_negative"
+					android:layout_width="@dimen/tab_button_size_v"
+					android:layout_height="@dimen/tab_button_size_v"
+			    	android:background="@drawable/tab_ce_negative"
+			    	android:layout_marginLeft="2dip"
+			    	android:layout_marginRight="2dip" />
+			</LinearLayout>
+		</HorizontalScrollView>
+	<Gallery
+	  	android:id="@+id/frame_gallery"
+	  	android:layout_width="match_parent"
+	  	android:layout_height="wrap_content"
+	  	android:layout_alignParentBottom="true"
+	  	android:gravity="center_vertical"
+	  	android:spacing="2dip"
+	  	android:background="@color/trans_bar_background"
+	  	android:padding="0dip" />
+	<FrameLayout
+		android:id="@+id/layout_flash_frame"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#FFFFFFFF"
+		android:visibility="gone"/>
+</RelativeLayout>
+

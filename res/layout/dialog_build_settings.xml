@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:minWidth="280dip">
+	<LinearLayout
+	  android:orientation="vertical"
+	  android:layout_width="match_parent"
+	  android:layout_height="match_parent"
+	  android:padding="10dp">
+	    <TextView android:text="Image Size" 
+	    	android:layout_width="wrap_content" 
+	    	android:layout_height="wrap_content" 
+	    	android:textAppearance="?android:attr/textAppearanceSmall"/>
+	    <RadioGroup android:id="@+id/radiogroup_img_size" 
+	    			android:layout_width="match_parent"
+	    			android:layout_height="wrap_content"
+	    			android:orientation="horizontal"
+	    			android:weightSum="1.0">
+	        <RadioButton android:id="@+id/radio_img_small"
+	        			 android:layout_width="wrap_content"  
+	        			 android:layout_height="wrap_content"
+	        			 android:layout_marginRight="5dp"
+	        			 android:textAppearance="?android:attr/textAppearanceSmall"
+	        			 android:checked="true"
+	        			 android:text="tiny"
+	        			 android:layout_weight=".33"
+	        			 />
+	        <RadioButton android:id="@+id/radio_img_med"
+	        			 android:layout_width="wrap_content" 
+	        			 android:layout_height="wrap_content"
+	        			 android:layout_marginRight="5dp"
+	        			 android:textAppearance="?android:attr/textAppearanceSmall"
+	        			 android:text="Normal"
+	        			 android:layout_weight=".33"
+	        			 />
+	        <RadioButton android:id="@+id/radio_img_large"
+	        			 android:layout_width="wrap_content"
+	        			 android:layout_height="wrap_content"
+	        			 android:textAppearance="?android:attr/textAppearanceSmall"
+	        			 android:text="HUGE"
+	        			 android:layout_weight=".33"
+	        			 />
+	    </RadioGroup>
+	    <TextView android:text="Gif Speed (In Seconds)" 
+	    	android:layout_width="wrap_content" 
+	    	android:layout_height="wrap_content" 
+	    	android:textAppearance="?android:attr/textAppearanceSmall"/>
+	    <SeekBar android:id="@+id/sb_framedelay"
+	    		 android:layout_height="wrap_content"
+	    		 android:layout_width="match_parent" />
+	    <FrameLayout android:layout_width="match_parent"
+	    			 android:layout_height="wrap_content">
+	        <TextView android:layout_width="wrap_content"
+	        		  android:layout_height="wrap_content"
+	        		  android:layout_gravity="left"
+	        		  android:text="Fast"
+	        		  android:textAppearance="?android:attr/textAppearanceSmall"/>
+	        <TextView android:layout_width="wrap_content" 
+	        		  android:layout_height="wrap_content"
+	        		  android:layout_gravity="center_horizontal" 
+	        		  android:text="0"
+	        		  android:textAppearance="?android:attr/textAppearanceSmall"
+	        		  android:id="@+id/text_gif_framedelay"
+	        		  />
+	        <TextView android:layout_width="wrap_content"
+	        		  android:layout_height="wrap_content"
+	        		  android:layout_gravity="right" 
+	        		  android:text="Slow"
+	        		  android:textAppearance="?android:attr/textAppearanceSmall"/>
+	    </FrameLayout>
+	    <RelativeLayout android:layout_width="match_parent"
+	    				android:layout_height="wrap_content">
+	        <Button android:layout_width="wrap_content"
+	        		android:layout_height="wrap_content"
+	        		android:layout_alignParentRight="true"
+	        		android:text="Cancel"
+	        		android:id="@+id/butt_cancel_build" />
+	        <Button android:layout_width="wrap_content"
+	        		android:layout_height="wrap_content"
+	        		android:layout_toLeftOf="@id/butt_cancel_build"
+	        		android:text="Build It!"
+	        		android:id="@+id/butt_build_gif" />
+	        
+	    </RelativeLayout>
+	</LinearLayout>
+</ScrollView>
+
+<!-- android:layout_weight=".33" -->
