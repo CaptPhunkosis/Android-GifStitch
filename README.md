@@ -16,6 +16,6 @@ Copyright (c) Nick Thuesen
 * [GPLv3](http://www.gnu.org/copyleft/gpl.html)
 
 ## Contributing
-Feel free to fork and contribute via pull requests.  Any contributions are new features, tweaks, translations, fixes...etc etc are appreciated.
+Feel free to fork and contribute via pull requests.  Any contributions, new features, tweaks, translations, fixes...etc etc are appreciated.
 
 ![](http://static.gifstitch.com/img/404spin.gif)
