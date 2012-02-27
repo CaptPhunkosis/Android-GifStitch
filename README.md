@@ -7,7 +7,7 @@ some good stuff in there and if you want to add that "missing feature" knock you
 
 ## Links
 * Market: https://market.android.com/details?id=com.phunkosis.gifstitch
-* Site: htttp://www.gifstitch.com
+* Site: http://www.gifstitch.com
 * Blog: http://blog.gifstitch.com
 
 ## License
