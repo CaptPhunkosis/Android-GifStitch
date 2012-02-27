@@ -6,9 +6,9 @@ This was my first android app.  So by no means should you use this code as a "ho
 some good stuff in there and if you want to add that "missing feature" knock yourself out.
 
 ## Links
-Market: https://market.android.com/details?id=com.phunkosis.gifstitch
-Site: htttp://www.gifstitch.com
-Blog: http://blog.gifstitch.com
+* Market: https://market.android.com/details?id=com.phunkosis.gifstitch
+* Site: htttp://www.gifstitch.com
+* Blog: http://blog.gifstitch.com
 
 ## License
 Copyright (c) Nick Thuesen
